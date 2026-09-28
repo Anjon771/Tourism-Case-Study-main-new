@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University of Caloocan City, B.Sc. Computer Science. Game Development. Sometimes known as PP Namias on the internet">
+    <meta name="keywords" content="Jhon Keneth Ryan B. Namias, Explore the Philippines, PP Namias onepage, PP Namias developer, PP Namias resume, cv, PP Namias festivals,PP Namias portfolio, PP Namias festivals resume, PP Namias clean, PP-Namias, PP_Namias">
+    <meta name="author" content="PP-Namias">
+    <meta property="og:url" content="https://pp-namias.github.io/Tourism-Case-Study/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IMFITP | Explore the Philippines"/> 
+    <meta property="og:image" content="https://pp-namias.github.io/Tourism-Case-Study/img/Tourism-Case-Study.png"/>
+    <meta property="og:image:alt" content="IMFITP | Explore the Philippines">
+    <meta property="og:description" content="IMFITP | Explore the Philippines - The Philippines is a treasure trove of natural wonders and cultural experiences that are waiting to be discovered."/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="pp-namias.github.io">
+    <meta property="twitter:url" content="https://pp-namias.github.io/Tourism-Case-Study/">
+    <meta name="twitter:title" content="IMFITP | Explore the Philippines">
+    <meta name="twitter:description" content="IMFITP | Explore the Philippines - The Philippines is a treasure trove of natural wonders and cultural experiences that are waiting to be discovered.">
+    <meta name="twitter:image" content="https://pp-namias.github.io/Tourism-Case-Study/img/Tourism-Case-Study.png">
+    <meta name="twitter:image:alt" content="IMFITP | Explore the Philippines">
+
+    <title>IMFITP | Explore the Philippines</title>
+
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="dark">
+<!-- nav -->
+<div class="header">
+    <nav class="nav">
+        <div class="wrap navigation">
+            <a href="./" class="logo">
+            Search Festivals and Events?
+            </a>
+            <div id="toggle-theme">
+                <div class="light-theme">
+                    <div>
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <p>
+                        light Mode
+                    </p>
+                </div>
+                <div class="dark-theme">
+                    <div>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <p>
+                        Dark Mode
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- main -->
+<div class="main">
+    <div class="content wrap">
+        <div class="input-field">
+            <div class="input transitionWidth">
+                <div class="search-logo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input id="inputCountry" type="text" placeholder="Search for Festival or Events...">
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown transitionWidth" id="filter-region">
+                <p>
+                    Filter by Type
+                </p>
+                <div class="arrow-down chevron-down">
+                    <span class=""><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+            </div>
+            <ul class="dropdown-menu dropdown-hide">
+                <li class="All">All</li>
+                <li class="Festivals">Festivals</li>
+                <li class="Events">Events</li>
+                <li class="Asia">Holidays</li>
+                <li class="Europe">Cultural Festival</li>
+                <li class="Oceania">Food Festival</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap countryInfo">
+        <!-- display country here -->
+    </div>
+</div>
+<div class="more-country-info">
+    <div class="wrap container-info">
+        <button id="back-home-btn">
+        <i class="fa-solid fa-arrow-left-long"></i> Back
+        </button>
+        <div class="grid">
+            <div class="country-flag-info transitionWidth">
+                <img id="country-data-big" src="" alt="">
+            </div>
+            <div class="country-info">
+                <!-- country name -->
+                <div id="country-name" class="country-name">
+                    <p>N/A</p>
+                </div>
+                <!-- country more info -->
+                <div class="country-description">
+                    <div class="left">
+                        <p>Description: <span id="native-name">N/A</span></p>
+                        <p>Date: <span id="population">N/A</span></p>
+                        <p>Location: <span id="region">N/A</span></p>
+                    </div>
+                </div>
+                <!-- border countries 
+                    <div class="border-countries">
+                        <div class="name">
+                            <p>Border Countries: </p>
+                        </div>
+                        <div class="border-country" id="border-country">
+                            <div class="country">
+                                <p>France</p>
+                            </div>
+                            <div class="country">
+                                <p>Germany</p>
+                            </div>
+                            <div class="country">
+                                <p>Netherlands</p>
+                            </div>
+                        </div>
+                        
+                    </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- script -->
+<script src="./js/script.js"></script>
+</body>
+</html>
